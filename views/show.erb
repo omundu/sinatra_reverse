@@ -1,0 +1,7 @@
+<h1>Reversed Text</h1>
+<% if params[:post][:text].nil? || params[:post][:text] == "Enter text to reverse..." %>
+  <p>No params entered. <a href="/">Try again</a></p>
+<% else %>
+  <p><%= params[:post][:text].reverse %></p>
+  <p><a href="/">Reverse Another text string.</a></p>
+<% end %>
